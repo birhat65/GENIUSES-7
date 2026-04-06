@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>𝗚𝗘𝗡𝗜𝗨𝗦𝗘𝗦 7 𝐖𝐄𝐁 𝐒𝐈𝐓𝐄 ₊♚₊</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-particles"></div>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="card-glow"></div>
+
+      <div class="hero">
+        <div>
+          <span class="badge">Premium Discord Scheduler</span>
+          <h1>𝗚𝗘𝗡𝗜𝗨𝗦𝗘𝗦 7 𝐖𝐄𝐁 𝐒𝐈𝐓𝐄 ₊♚₊</h1>
+          <p class="sub">
+            Add your webhook URL, write your message, and start automatic delivery every 24 hours.
+            When you stop it, all automatic messages stop completely.
+          </p>
+        </div>
+        <div class="moon"></div>
+      </div>
+
+      <div class="grid">
+        <div class="field full">
+          <label>Discord Webhook URL</label>
+          <input id="webhookUrl" type="text" placeholder="https://discord.com/api/webhooks/..." />
+        </div>
+
+        <div class="field full">
+          <label>Message</label>
+          <textarea id="message" rows="7" placeholder="Write the message that will be sent automatically..."></textarea>
+        </div>
+
+        <div class="field">
+          <label>Hour Interval</label>
+          <input id="intervalHours" type="number" min="1" value="24" />
+        </div>
+
+        <div class="field">
+          <label>Live Status</label>
+          <div class="miniStatus">
+            <span class="dot" id="liveDot"></span>
+            <span id="status">Loading...</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="saveBtn">Save</button>
+        <button id="testBtn" class="secondary">Send Test</button>
+        <button id="sendNowBtn" class="secondary">Send Now</button>
+        <button id="startBtn" class="success">Start</button>
+        <button id="stopBtn" class="danger">Stop</button>
+      </div>
+
+      <div class="statusBox">
+        <div class="statusItem">
+          <span class="statusLabel">Last Sent</span>
+          <span id="lastSentAt">-</span>
+        </div>
+        <div class="statusItem">
+          <span class="statusLabel">Next Send</span>
+          <span id="nextSendAt">-</span>
+        </div>
+      </div>
+
+      <section class="linksPanel">
+        <h2>My Links</h2>
+        <div class="socialGrid">
+          <a class="socialCard" href="https://discord.gg/BbWDcHUBcJ" target="_blank" rel="noopener noreferrer">
+            <span class="socialTitle">Discord Server 1</span>
+            <span class="socialUrl">discord.gg/BbWDcHUBcJ</span>
+          </a>
+
+          <a class="socialCard" href="https://discord.gg/AYJWg7zgeZ" target="_blank" rel="noopener noreferrer">
+            <span class="socialTitle">Discord Server 2</span>
+            <span class="socialUrl">discord.gg/AYJWg7zgeZ</span>
+          </a>
+
+          <a class="socialCard tiktok" href="https://www.tiktok.com/@bir7at2?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">
+            <span class="socialTitle">TikTok</span>
+            <span class="socialUrl">@bir7at2</span>
+          </a>
+        </div>
+      </section>
+
+      <div id="messageBox" class="messageBox hidden"></div>
+
+      <footer class="footerNote">
+        The owner of this site is <strong>Birhat Developer</strong>.
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

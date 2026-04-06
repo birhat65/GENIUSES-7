@@ -1,0 +1,8 @@
+{
+  "webhookUrl": "https://ptb.discord.com/api/webhooks/1490411024002584737/xPBIvBwUVymuBSzcY3fsOE_mtldJ3ob1x2XfppOApcewltOuTFJZ-RZAkTgefoTUyypf",
+  "message": "@everyone birhat",
+  "intervalHours": 24,
+  "isRunning": true,
+  "nextSendAt": "2026-04-07T03:56:16.541Z",
+  "lastSentAt": "2026-04-06T03:54:28.086Z"
+}
