@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>𝗚𝗘𝗡𝗜𝗨𝗦𝗘𝗦 𝟕 𝐖𝐄𝐁 𝐒𝐈𝐓𝐄 ₊♚₊</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="midnight">
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <main class="app-shell">
+    <section class="main-card">
+      <header class="topbar">
+        <div>
+          <span class="pill">Premium v1 </span>
+          <h1>𝗚𝗘𝗡𝗜𝗨𝗦𝗘𝗦 𝟕 𝐖𝐄𝐁 𝐒𝐈𝐓𝐄 ₊♚₊</h1>
+          <p class="subtext">Discord account connect, private dashboards, multiple images, multiple videos, mixed uploads, and a better floating orb animation.</p>
+        </div>
+        <div class="brand-mark" id="brandMark">BH</div>
+      </header>
+
+      <div id="authView" class="auth-layout">
+        <section class="auth-panel">
+          <h2>Create Account ✨</h2>
+          <label>Username</label>
+          <input id="registerUsername" type="text" placeholder="yourname" />
+          <label>Password</label>
+          <input id="registerPassword" type="password" placeholder="password" />
+          <button id="registerBtn" class="btn btn-primary">Create Account</button>
+        </section>
+        <section class="auth-panel">
+          <h2>Log In 🔐</h2>
+          <label>Username</label>
+          <input id="loginUsername" type="text" placeholder="yourname" />
+          <label>Password</label>
+          <input id="loginPassword" type="password" placeholder="password" />
+          <button id="loginBtn" class="btn btn-dark">Log In</button>
+        </section>
+      </div>
+
+      <div id="dashboardView" class="hidden">
+        <section class="hero-grid">
+          <article class="hero-panel">
+            <div class="hero-head">
+              <div>
+                <p class="eyebrow">Dashboard</p>
+                <h2 id="welcomeTitle">Welcome</h2>
+              </div>
+              <button id="logoutBtn" class="btn btn-dark btn-small">Log Out</button>
+            </div>
+
+            <div class="discord-connect-row">
+              <button id="connectDiscordBtn" class="btn btn-primary btn-small">Connect Discord</button>
+              <div class="discord-status" id="discordStatus">Discord not connected yet</div>
+            </div>
+
+            <div class="user-chip-row">
+              <div class="user-chip"><span class="chip-label">User</span><strong id="usernameLabel">-</strong></div>
+              <div class="user-chip"><span class="chip-label">Plan</span><strong id="planLabel">Premium</strong></div>
+              <div class="user-chip"><span class="chip-label">Status</span><strong id="statusTextTop">Stopped</strong></div>
+            </div>
+          </article>
+
+          <article class="stats-panel">
+            <div class="stat-box"><span class="stat-label">Total Sent</span><strong id="totalSent">0</strong></div>
+            <div class="stat-box"><span class="stat-label">Last Sent</span><strong id="lastSentAt">-</strong></div>
+            <div class="stat-box"><span class="stat-label">Next Send</span><strong id="nextSendAt">-</strong></div>
+          </article>
+        </section>
+
+        <section class="dashboard-grid">
+          <article class="panel-card main-panel">
+            <div class="section-head">
+              <h3>Scheduler Settings</h3>
+              <div class="live-badge"><span class="dot" id="liveDot"></span><span id="status">Stopped</span></div>
+            </div>
+
+            <label>Discord Webhook URL</label>
+            <input id="webhookUrl" type="text" placeholder="https://discord.com/api/webhooks/..." />
+
+            <label>Message</label>
+            <textarea id="message" rows="7" placeholder="Write your message here..."></textarea>
+
+            <div class="two-col">
+              <div>
+                <label>Hour Interval</label>
+                <input id="intervalHours" type="number" min="1" value="24" />
+              </div>
+              <div>
+                <label>Theme</label>
+                <select id="themeSelect">
+                  <option value="Midnight">Midnight</option>
+                  <option value="Neon">Neon</option>
+                  <option value="Crimson">Crimson</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="action-grid">
+              <button id="saveBtn" class="btn btn-primary">Save</button>
+              <button id="testBtn" class="btn btn-dark">Send Test</button>
+              <button id="sendNowBtn" class="btn btn-dark">Send Now</button>
+              <button id="startBtn" class="btn btn-success">Start</button>
+              <button id="stopBtn" class="btn btn-danger">Stop</button>
+            </div>
+          </article>
+
+          <article class="panel-card side-panel">
+            <div class="section-head">
+              <h3>Multi Media Sender</h3>
+              <span class="helper-badge">Images / Videos</span>
+            </div>
+
+            <label>Message For Media</label>
+            <textarea id="mediaMessage" rows="5" placeholder="Write a message for your images and videos..."></textarea>
+
+            <label>Images</label>
+            <input id="imageFiles" type="file" accept="image/*" multiple />
+
+            <label>Videos</label>
+            <input id="videoFiles" type="file" accept="video/*" multiple />
+
+            <button id="uploadSendBtn" class="btn btn-primary">Send Selected Media</button>
+
+            <div class="mini-note">
+              You can send only images, only videos, or a mix of both in one message.
+              Up to 10 files total. Max 24 MB per file.
+            </div>
+          </article>
+
+          <article class="panel-card side-panel">
+            <div class="section-head">
+              <h3>Quick Links</h3>
+              <span class="helper-badge">Social</span>
+            </div>
+
+            <div class="link-stack">
+              <a class="link-card" href="https://discord.gg/BbWDcHUBcJ" target="_blank" rel="noopener noreferrer"><span>𝗚𝗘𝗡𝗜𝗨𝗦𝗘𝗦 𝟕 ₊♚₊</span><small>discord.gg/BbWDcHUBcJ</small></a>
+              <a class="link-card" href="https://discord.gg/AYJWg7zgeZ" target="_blank" rel="noopener noreferrer"><span>𝐊𝐔𝐑𝐃𝐈𝐒𝐇 𝐋𝐈𝐅𝐄</span><small>discord.gg/AYJWg7zgeZ</small></a>
+              <a class="link-card" href="https://www.tiktok.com/@bir7at2?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer"><span>TikTok</span><small>@bir7at2</small></a>
+            </div>
+          </article>
+
+          <article class="panel-card wide-panel">
+            <div class="section-head">
+              <h3>Premium Preview</h3>
+              <span class="helper-badge">Responsive UI</span>
+            </div>
+            <div class="preview-card">
+              <div class="preview-header"><span class="preview-pill">Owner</span><strong>Birhat Developer</strong></div>
+              <p>Phone and desktop are both optimized. Cards stack smoothly on mobile, buttons stay easy to press, and your Discord avatar can replace the BH logo after account connection.</p>
+            </div>
+          </article>
+        </section>
+      </div>
+
+      <div id="messageBox" class="message-box hidden"></div>
+      <footer class="footer-note">The owner of this site is <strong>Birhat Developer</strong>.</footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
