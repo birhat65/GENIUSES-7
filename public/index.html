@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>𝗚𝗘𝗡𝗜𝗨𝗦𝗘𝗦 7 𝐖𝐄𝐁 𝐒𝐈𝐓𝐄 ₊♚₊</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-particles"></div>
+
+  <main class="wrap">
+    <section class="card">
+      <div class="card-glow"></div>
+
+      <div class="hero">
+        <div>
+          <span class="badge">Multi User Discord Scheduler</span>
+          <h1>𝗚𝗘𝗡𝗜𝗨𝗦𝗘𝗦 7 𝐖𝐄𝐁 𝐒𝐈𝐓𝐄 ₊♚₊</h1>
+          <p class="sub">
+            Every user gets their own webhook, their own message, and their own scheduler.
+            Your Discord messages stay separate from everyone else.
+          </p>
+        </div>
+        <div class="moon"></div>
+      </div>
+
+      <div id="authView">
+        <div class="authGrid">
+          <div class="authCard">
+            <h2>Create Account</h2>
+            <label>Username</label>
+            <input id="registerUsername" type="text" placeholder="yourname" />
+            <label>Password</label>
+            <input id="registerPassword" type="password" placeholder="password" />
+            <button id="registerBtn" class="success">Create Account</button>
+          </div>
+
+          <div class="authCard">
+            <h2>Log In</h2>
+            <label>Username</label>
+            <input id="loginUsername" type="text" placeholder="yourname" />
+            <label>Password</label>
+            <input id="loginPassword" type="password" placeholder="password" />
+            <button id="loginBtn" id="loginBtn" class="secondary">Log In</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="dashboardView" class="hidden">
+        <div class="userBar">
+          <div>
+            Logged in as <strong id="usernameLabel">-</strong>
+          </div>
+          <button id="logoutBtn" class="secondary smallBtn">Log Out</button>
+        </div>
+
+        <div class="grid">
+          <div class="field full">
+            <label>Discord Webhook URL</label>
+            <input id="webhookUrl" type="text" placeholder="https://discord.com/api/webhooks/..." />
+          </div>
+
+          <div class="field full">
+            <label>Message</label>
+            <textarea id="message" rows="7" placeholder="Write the message that will be sent automatically..."></textarea>
+          </div>
+
+          <div class="field">
+            <label>Hour Interval</label>
+            <input id="intervalHours" type="number" min="1" value="24" />
+          </div>
+
+          <div class="field">
+            <label>Live Status</label>
+            <div class="miniStatus">
+              <span class="dot" id="liveDot"></span>
+              <span id="status">Loading...</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button id="saveBtn">Save</button>
+          <button id="testBtn" class="secondary">Send Test</button>
+          <button id="sendNowBtn" class="secondary">Send Now</button>
+          <button id="startBtn" class="success">Start</button>
+          <button id="stopBtn" class="danger">Stop</button>
+        </div>
+
+        <div class="statusBox">
+          <div class="statusItem">
+            <span class="statusLabel">Last Sent</span>
+            <span id="lastSentAt">-</span>
+          </div>
+          <div class="statusItem">
+            <span class="statusLabel">Next Send</span>
+            <span id="nextSendAt">-</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="messageBox" class="messageBox hidden"></div>
+
+      <footer class="footerNote">
+        The owner of this site is <strong>Birhat Developer</strong>.
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
