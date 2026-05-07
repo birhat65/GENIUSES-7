@@ -1,0 +1,66 @@
+{
+  "users": {
+    "birhat": {
+      "passwordHash": "$2a$10$ZsuB8QRtFhqryKtwuWnIMe327562O8H8Ul8adMCE748PNfzOTvqa6",
+      "plan": "Premium",
+      "webhookUrl": "",
+      "message": "Hello! This is your automatic 24-hour message.",
+      "intervalHours": 24,
+      "isRunning": false,
+      "nextSendAt": null,
+      "lastSentAt": null,
+      "theme": "Midnight",
+      "stats": {
+        "totalSent": 0
+      },
+      "discord": {
+        "connected": false,
+        "id": "",
+        "username": "",
+        "globalName": "",
+        "avatar": ""
+      }
+    },
+    "wdawdwsa": {
+      "passwordHash": "$2a$10$V88Vu33UeN9in3EjczDv/OTW/bQQTrnz6lFMuDq2IDP6QmgSlv/oG",
+      "plan": "Premium",
+      "webhookUrl": "",
+      "message": "Hello! This is your automatic 24-hour message.",
+      "intervalHours": 24,
+      "isRunning": false,
+      "nextSendAt": null,
+      "lastSentAt": null,
+      "theme": "Midnight",
+      "stats": {
+        "totalSent": 0
+      },
+      "discord": {
+        "connected": false,
+        "id": "",
+        "username": "",
+        "globalName": "",
+        "avatar": ""
+      },
+      "botPanel": {
+        "botToken": "",
+        "adChannelId": "1486070885717639349",
+        "tagTrigger": "tag v",
+        "adTrigger": "reklam",
+        "dmMessage": "Send me your Discord server invite link.",
+        "video": {
+          "filename": "abe82cf893f8a5d6c7e14594613c3d36",
+          "path": "C:\\Users\\tanbi\\Desktop\\GENIUSES-7-main\\data\\uploads\\abe82cf893f8a5d6c7e14594613c3d36",
+          "originalname": "copy_A2E2C036-0C94-4D69-A7A1-C97BC3E0257E.mov",
+          "mimetype": "video/quicktime",
+          "uploadedAt": "2026-05-07T11:38:24.554Z"
+        },
+        "adRequests": {},
+        "adCooldowns": {
+          "651094230034546748": 1778153828848
+        },
+        "running": true,
+        "lastError": ""
+      }
+    }
+  }
+}

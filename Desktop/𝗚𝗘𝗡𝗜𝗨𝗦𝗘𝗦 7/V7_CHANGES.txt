@@ -1,0 +1,16 @@
+GENIUSES-7 v7 FULL FIXED
+
+Fixed:
+- Full project files included, not only README.
+- Bot video upload is stored with filename + path, so tag can find the uploaded video.
+- tag trigger replies to the user's message and sends the uploaded video.
+- reklam trigger replies to the user's message and asks the user to DM the bot with their Discord invite.
+- DM accepts only Discord invites: discord.gg/... or discord.com/invite/...
+- After a valid invite, the bot posts ONLY the invite link to the selected ad channel.
+- No username is posted in the ad channel.
+- User receives an English success message after the invite is posted.
+- 5-hour cooldown message stays English.
+
+Important:
+- Enable Message Content Intent and Server Members/Guild intents if Discord asks in Developer Portal.
+- The bot must have permission to Read Messages, Send Messages, Attach Files, and send DMs.
